@@ -5,7 +5,9 @@ module.exports.loop = () => {
     creepsArr = []
 
     if (creepsNameArr < 1) {
-        Game.creeps.forEach(c=> creepsNameArr.push(c.name))
+        for (var name in Game.creeps) {
+            creepsNameArr.push(name)
+        }
     }
     
 
