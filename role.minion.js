@@ -2,6 +2,7 @@ module.exports = {
     run: function(creep) {
         console.log("!")
         console.log(creep.store.getFreeCapacity())
+        console.log(Game.spawns['Spawn1'].store.getFreeCapacity())
         if(creep.store.getFreeCapacity() >= 1) {
             console.log("hyear")
             let sources = creep.room.find(FIND_SOURCES);
