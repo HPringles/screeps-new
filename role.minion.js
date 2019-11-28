@@ -6,7 +6,7 @@ module.exports = {
                 creep.moveTo(sources[0]);
             }
         }
-        else if (Game.spawns['Spawn1'].energy < Game.spawns['Spawn1'].energyCapacity) {
+        else if (Game.spawns['Spawn1'].store.getFreeCapacity() >= 1) {
             if (creep.transfer(Game.spawns['Spawn1'], RESOURCE_ENERGY) == ERR_NOT_IN_RANGE) {
                 creep.moveTo(Game.spawns['Spawn1'])
             }
