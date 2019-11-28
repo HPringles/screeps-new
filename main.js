@@ -1,8 +1,8 @@
 module.exports.loop = () => {
     let spawn = Game.spawns['Spawn1']
 
-    creepsNameArr = []
-    creepsArr = []
+    let creepsNameArr = []
+    let creepsArr = []
 
     if (creepsNameArr < 1) {
         for (var name in Game.creeps) {
