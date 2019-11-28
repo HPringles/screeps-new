@@ -9,8 +9,8 @@ module.exports.loop = () => {
         creepsNameArr.push(newCreepName)
         creepsArr.push(newCreep)
     }
-    print(creepsArr)
-    print(creepsNameArr)
+    console.log(creepsArr)
+    console.log(creepsNameArr)
 
     console.log("yee")
 
