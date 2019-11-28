@@ -31,10 +31,7 @@ module.exports.loop = () => {
             roleMinion.run(creep)
         }
     }
-    console.log(creepsArr)
-    console.log(creepsNameArr)
 
-    console.log("yee")
 
 
 }
