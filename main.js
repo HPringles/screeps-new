@@ -1,3 +1,5 @@
+const roleMinion = require('role.minion')
+
 module.exports.loop = () => {
     let spawn = Game.spawns['Spawn1']
 
@@ -20,6 +22,14 @@ module.exports.loop = () => {
             creepsArr.push(newCreep) 
         }
         
+    }
+
+
+    for (var name in Game.creeps) {
+        let creep = Game.creeps[name]
+        if (creep.memory.role == 'minion') {
+            roleMinion.run(creep)
+        }
     }
     console.log(creepsArr)
     console.log(creepsNameArr)
