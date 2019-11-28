@@ -3,6 +3,13 @@ module.exports.loop = () => {
 
     creepsNameArr = []
     creepsArr = []
+
+    if (creepsNameArr < 1) {
+        Game.creeps.forEach(c=> creepsNameArr.push(c.name))
+    }
+    
+
+
     if (creepsArr.length < 1) {
         newCreepName = Array(10).map(x => Math.random.toString(36).substring(7))
         newCreep = spawn.spawnCreep([WORK, CARRY, MOVE], newCreepName, {memory: {role: 'minion'}})
